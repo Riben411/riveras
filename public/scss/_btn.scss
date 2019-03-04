@@ -1,0 +1,38 @@
+.btn-rose {
+  padding: 10px;
+  background: $header;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  &:hover {
+    background: #591134;
+  }
+}
+
+/* CLASES DE btn */
+.btn {
+  border-radius: 20px;
+  background: #c2c2c2;
+  padding: inherit;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover {
+  background: #535554;
+  cursor: pointer;
+  color: #fff;
+
+}
+
+.primary {
+  background: #094f6c;
+}
+
+.danger {
+  background: #a10500;
+}
+
+.alert {
+  background: #b18c09;
+}

@@ -1,5 +1,15 @@
 
+$header: #740c34;
+$body: #e7e7e7;
+
 @import 'normalize'; // RESETEA E IGUALA LOS ESTILOS EN TODOS LOS NAVEGADORES
 @import 'titles';
+@import 'fonts';
+@import 'btn';
 @import 'text';
 @import 'header';
+@import 'body';
+
+@import 'main';
+@import 'aside';
+@import 'footer';

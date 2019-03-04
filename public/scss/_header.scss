@@ -1,10 +1,32 @@
-.header {
-   padding: 5px;
-   color: #fff;
-   background: #8b7575;
-   text-shadow: 2px 2px 2px #000;
-
-   & p {
-      font-size: 18px;
-   }
+/* AQUI INICIA EL DISEÑO DE HEADER EN EL ARCHIVO index.html */
+header {
+  padding: 5px;
+  align-items: center;
+  background: $header;
 }
+
+  .nav {
+    & ul {
+      height: auto;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      & li {
+        padding: 5px 0px;
+        & a:link, a:visited {
+          color: #fff;
+          padding: 14px 20px;
+          margin-right: 10px;
+          text-decoration: none;
+          font-size: 1.5em;
+          box-sizing: border-box;
+          border-radius: 15px;
+        }
+        a:hover {
+          background: #4b0b20;
+          color: #fff;
+        }
+      }
+    }
+  }
