@@ -1,0 +1,10 @@
+.header {
+   padding: 5px;
+   color: #fff;
+   background: #8b7575;
+   text-shadow: 2px 2px 2px #000;
+
+   & p {
+      font-size: 18px;
+   }
+}

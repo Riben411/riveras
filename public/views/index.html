@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- METADATOS -->
+{include file=$DIR|cat:'inc/head.html'}
+
+<body>
+   <!-- CABECERA -->
+   {include file=$DIR|cat:'inc/header.html'}
+
+   <!-- CONTENIDO PRINCIPAL -->
+   {include file=$DIR|cat:'modules/index/index-main.html'}
+   <!-- CONTENIDO LATERAL -->
+   {include file=$DIR|cat:'modules/index/index-aside.html'}
+
+   <!-- PIÉ DE PÁGINA -->
+   {include file=$DIR|cat:'inc/footer.html'}
+</body>
+
+<!-- RECURSOS JAVASCRIPT -->
+{include file=$DIR|cat:'inc/source-js.html'}
+</html>
