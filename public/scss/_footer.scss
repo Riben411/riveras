@@ -1,0 +1,22 @@
+footer {
+  background: #000;
+  color: #fff;
+  min-height: 10vh;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.social {
+  & ul {
+    list-style: none;
+    & li {
+      display: inline-block;
+      & a {
+        & i {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

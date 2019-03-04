@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -341,18 +342,183 @@ h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
 }
 
+.btn-rose {
+  padding: 10px;
+  background: #740c34;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.btn-rose:hover {
+  background: #591134;
+}
+
+/* CLASES DE btn */
+.btn {
+  border-radius: 20px;
+  background: #c2c2c2;
+  padding: inherit;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover {
+  background: #535554;
+  cursor: pointer;
+  color: #fff;
+}
+
+.primary {
+  background: #094f6c;
+}
+
+.danger {
+  background: #a10500;
+}
+
+.alert {
+  background: #b18c09;
+}
+
 p, pre {
   font-family: sans-serif;
 }
 
-.header {
+/* AQUI INICIA EL DISEÑO DE HEADER EN EL ARCHIVO index.html */
+header {
   padding: 5px;
-  color: #fff;
-  background: #8b7575;
-  text-shadow: 2px 2px 2px #000;
+  align-items: center;
+  background: #740c34;
 }
-.header p {
-  font-size: 18px;
+
+.nav ul {
+  height: auto;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav ul li {
+  padding: 5px 0px;
+}
+.nav ul li a:link, .nav ul li a:visited {
+  color: #fff;
+  padding: 14px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.nav ul li a:hover {
+  background: #4b0b20;
+  color: #fff;
+}
+
+body {
+  background-color: #e7e7e7;
+}
+
+main {
+  min-height: 75vh;
+  background-image: url("../../storage/thumbs/logo.png");
+  background-repeat: no-repeat;
+  background-size: 600px 400px;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+/* DISEÑO DEL index.html */
+.index-main {
+  min-height: 75vh;
+  box-sizing: border-box;
+  padding: 10px 50px;
+}
+
+/*DISEÑO DE LA TABLA 'SECTION' DEL ARCHIVO ventas.html*/
+.tabla-info {
+  height: 80vh;
+}
+.tabla-info table {
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 15px;
+  background: #ccafbe;
+  border-collapse: collapse;
+  text-align: center;
+}
+.tabla-info table thead {
+  background: #740c34;
+  color: #fff;
+  border-bottom: solid 2px #000;
+}
+.tabla-info table tr td, .tabla-info table tr th {
+  padding: 10px;
+}
+
+/*DISEÑO DE LAS MESAS EN 'SECTION' DEL ARCHIVO ventas.html*/
+.fondo-mesas {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+}
+.fondo-mesas .mesa {
+  text-align: center;
+  margin: 15px;
+  min-height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: 0.1s;
+  border-radius: 20px;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.fondo-mesas label {
+  cursor: pointer;
+}
+
+.ocupada {
+  background: #69b36c;
+}
+.ocupada:hover {
+  background: #228641;
+}
+
+.desocupada {
+  background: #d0d0d0;
+}
+.desocupada:hover {
+  background: #afafaf;
+}
+
+.advertising {
+  text-align: center;
+  background: rgba(170, 170, 170, 0.88);
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+/* AQUI TERMINA EL DISEÑO DE PUBLICIDAD DEL aside QUE SE ENCUENTRA EN EL index */
+footer {
+  background: #000;
+  color: #fff;
+  min-height: 10vh;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.social ul {
+  list-style: none;
+}
+.social ul li {
+  display: inline-block;
+}
+.social ul li a i {
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=master.css.map */
