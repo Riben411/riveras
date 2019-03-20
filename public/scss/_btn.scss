@@ -1,9 +1,10 @@
 .btn-rose {
-  padding: 10px;
+  cursor: pointer;
+  padding: 5px;
   background: $header;
   color: #fff;
   border-radius: 15px;
-  cursor: pointer;
+  border: solid 2px #520b2d;
   &:hover {
     background: #591134;
   }

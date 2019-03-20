@@ -9,3 +9,27 @@
 }
 
 /* AQUI TERMINA EL DISEÑO DE PUBLICIDAD DEL aside QUE SE ENCUENTRA EN EL index */
+
+/*DISEÑO DE LA TABLA 'SECTION' DEL ARCHIVO ventas.html*/
+.tabla-info {
+  & table {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 15px;
+    background: #ccafbe;
+    border-collapse: collapse;
+    text-align: center;
+    box-sizing: border-box;
+
+    & thead{
+      background: $header;
+      color: #fff;
+      border-bottom: solid 2px #000;
+    }
+    & tr {
+      & td, th {
+        padding: 10px;
+      }
+    }
+  }
+}

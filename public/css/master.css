@@ -343,11 +343,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-rose {
-  padding: 10px;
+  cursor: pointer;
+  padding: 5px;
   background: #740c34;
   color: #fff;
   border-radius: 15px;
-  cursor: pointer;
+  border: solid 2px #520b2d;
 }
 .btn-rose:hover {
   background: #591134;
@@ -378,6 +379,68 @@ h1, h2, h3, h4, h5, h6 {
 
 .alert {
   background: #b18c09;
+}
+
+.modal {
+  font-family: sans-serif;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 100;
+}
+.modal .m-bg {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+.modal .m-bg .m-content {
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 1px 2px #000, 0 1px 2px #000;
+  animation: slideDown;
+  animation-duration: 0.7s;
+}
+.modal .m-bg .m-content .m-header {
+  padding: 5px 20px;
+  background: #862867;
+}
+.modal .m-bg .m-content .m-header p {
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #000;
+}
+.modal .m-bg .m-content .m-body {
+  color: #000;
+  padding: 20px;
+  background: #fff;
+}
+.modal .m-bg .m-content .btn-close {
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #000;
+  padding: 4px;
+  font-size: 26px;
+  padding: 1px 4px;
+  background: #b6b5b5;
+  color: #e21717;
+}
+
+@keyframes slideDown {
+  from {
+    top: -50%;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+svg {
+  pointer-events: none;
 }
 
 p, pre {
@@ -421,10 +484,6 @@ body {
 
 main {
   min-height: 75vh;
-  background-image: url("../../storage/thumbs/logo.png");
-  background-repeat: no-repeat;
-  background-size: 600px 400px;
-  background-position: center;
   box-sizing: border-box;
 }
 
@@ -435,61 +494,42 @@ main {
   padding: 10px 50px;
 }
 
-/*DISEÑO DE LA TABLA 'SECTION' DEL ARCHIVO ventas.html*/
-.tabla-info {
-  height: 80vh;
-}
-.tabla-info table {
-  margin-top: 5px;
-  margin-left: 5px;
-  border-radius: 15px;
-  background: #ccafbe;
-  border-collapse: collapse;
-  text-align: center;
-}
-.tabla-info table thead {
-  background: #740c34;
-  color: #fff;
-  border-bottom: solid 2px #000;
-}
-.tabla-info table tr td, .tabla-info table tr th {
-  padding: 10px;
-}
-
 /*DISEÑO DE LAS MESAS EN 'SECTION' DEL ARCHIVO ventas.html*/
 .fondo-mesas {
   display: flex;
   flex-wrap: wrap;
-  float: right;
 }
 .fondo-mesas .mesa {
+  cursor: pointer;
   text-align: center;
-  margin: 15px;
+  margin: 10px;
   min-height: 100px;
-  padding: 10px;
+  padding: 10px 5px;
   box-sizing: border-box;
   transition: 0.1s;
   border-radius: 20px;
   font-size: 1.5em;
   font-family: sans-serif;
-  cursor: pointer;
+  box-shadow: 1px 1px 2px #000, 1px 2px 3px #313131;
 }
 .fondo-mesas label {
   cursor: pointer;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .ocupada {
   background: #69b36c;
 }
 .ocupada:hover {
-  background: #228641;
+  background: #42ad59;
 }
 
 .desocupada {
   background: #d0d0d0;
 }
 .desocupada:hover {
-  background: #afafaf;
+  background: #c0c0c0;
 }
 
 .advertising {
@@ -502,6 +542,25 @@ main {
 }
 
 /* AQUI TERMINA EL DISEÑO DE PUBLICIDAD DEL aside QUE SE ENCUENTRA EN EL index */
+/*DISEÑO DE LA TABLA 'SECTION' DEL ARCHIVO ventas.html*/
+.tabla-info table {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 15px;
+  background: #ccafbe;
+  border-collapse: collapse;
+  text-align: center;
+  box-sizing: border-box;
+}
+.tabla-info table thead {
+  background: #740c34;
+  color: #fff;
+  border-bottom: solid 2px #000;
+}
+.tabla-info table tr td, .tabla-info table tr th {
+  padding: 10px;
+}
+
 footer {
   background: #000;
   color: #fff;

@@ -2,19 +2,27 @@
 <html lang="es">
 <!-- METADATOS -->
 {include file=$DIR|cat:'inc/head.html'}
-
+<style>
+</style>
 <body>
+   {include file=$DIR|cat:'modules/ventas/agregar_cuenta.html'}
    <!-- CABECERA -->
    {include file=$DIR|cat:'modules/ventas/header-ventas.html'}
 
-   <!-- CONTENIDO PRINCIPAL -->
-   {include file=$DIR|cat:'modules/ventas/main-ventas.html'}
+   <div class="row">
+      <!-- SIDEBAR -->
+      {include file=$DIR|cat:'modules/ventas/sidebar-ventas.html'}   
+      <!-- CONTENIDO PRINCIPAL -->
+      {include file=$DIR|cat:'modules/ventas/main-ventas.html'}
+   </div>
 
    <!-- PIÉ DE PÁGINA -->
    {include file=$DIR|cat:'inc/footer.html'}
 </body>
 
 <!-- RECURSOS JAVASCRIPT -->
+<script src="public/js/ventas/events.js"></script>
+<script src="public/js/ventas/onload.js"></script>
+<script src="public/js/ventas/print-functions.js"></script>
 {include file=$DIR|cat:'inc/source-js.html'}
-
 </html>

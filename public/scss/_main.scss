@@ -4,10 +4,6 @@ body {
 
 main {
   min-height: 75vh;
-  background-image: url('../../storage/thumbs/logo.png');
-  background-repeat: no-repeat;
-  background-size: 600px 400px;
-  background-position: center;
   box-sizing: border-box;
 }
 
@@ -19,50 +15,28 @@ main {
   padding: 10px 50px;
 }
 
-/*DISEÑO DE LA TABLA 'SECTION' DEL ARCHIVO ventas.html*/
-
-.tabla-info {
-  height: 80vh;
-  & table {
-    margin-top: 5px;
-    margin-left: 5px;
-    border-radius: 15px;
-    background: #ccafbe;
-    border-collapse: collapse;
-    text-align: center;
-    & thead{
-      background: $header;
-      color: #fff;
-      border-bottom: solid 2px #000;
-    }
-    & tr {
-      & td, th {
-        padding: 10px;
-      }
-    }
-  }
-}
-
 /*DISEÑO DE LAS MESAS EN 'SECTION' DEL ARCHIVO ventas.html*/
 
 .fondo-mesas {
   display: flex;
   flex-wrap: wrap;
-  float: right;
   & .mesa {
+    cursor: pointer;
     text-align: center;
-    margin: 15px;
+    margin: 10px;
     min-height: 100px;
-    padding: 10px;
+    padding: 10px 5px;
     box-sizing: border-box;
     transition: 0.1s;
     border-radius: 20px;
     font-size: 1.5em;
     font-family: sans-serif;
-    cursor: pointer;
+    box-shadow: 1px 1px 2px #000, 1px 2px 3px #313131;
   }
   & label {
     cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
   }
 }
 
@@ -70,13 +44,13 @@ main {
 .ocupada {
   background: #69b36c;
   &:hover {
-    background: #228641;
+    background: #42ad59;
   }
 }
 
 .desocupada {
-    background: #d0d0d0;
-    &:hover {
-      background: #afafaf;
-    }
+  background: #d0d0d0;
+  &:hover {
+    background: #c0c0c0;
+  }
 }
